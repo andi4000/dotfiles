@@ -1,0 +1,7 @@
+fonts-crosextra-carlito     # replacement for Calibri font
+ttf-mscorefonts-installer
+texlive-fonts-extra
+fonts-cmu
+ack
+vim-gtk                     # for clipboard capability
+
