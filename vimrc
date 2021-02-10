@@ -21,3 +21,10 @@ highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
 highlight CursorLineNr ctermbg=Yellow
 
 set scrolloff=10
+
+" solarized
+" needs ~/.vim/colors/solarized.vim
+" set bg=light to switch
+syntax enable
+colorscheme solarized
+set bg=dark

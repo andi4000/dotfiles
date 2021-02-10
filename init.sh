@@ -10,6 +10,8 @@ git config --global core.excludesfile ~/.gitignore_global
 
 echo "==> vimrc"
 ln -s ${DOTFILES_DIR}/vimrc .vimrc
+mkdir -pv ~/.vim/colors
+cp -v ${DOTFILES_DIR}/.vim/colors/solarized.vim ~/.vim/colors/
 
 echo "==> byobu tmux fixes"
 echo "==> TODO: if file empty/nonexistent, do symlink instead"
