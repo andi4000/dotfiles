@@ -8,11 +8,11 @@ set autoindent
 highlight ExtraWhitespace ctermbg=yellow guibg=yellow
 match ExtraWhitespace /\s\+$/
 
-" max width
-" https://stackoverflow.com/questions/2447109/showing-a-different-background-colour-in-vim-past-80-characters
-let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
-set textwidth=80
+" mark width 80
+set colorcolumn=80
+
+" To format block selection: gq
+autocmd BufNewFile,BufRead *.md,*.txt set textwidth=80
 
 " line numbering
 set nu
