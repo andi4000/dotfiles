@@ -28,3 +28,8 @@ set scrolloff=10
 syntax enable
 colorscheme solarized
 set bg=dark
+
+" To enable mouse scroll in byobu+tmux
+" https://unix.stackexchange.com/a/50735
+set ttymouse=xterm2
+set mouse=a
