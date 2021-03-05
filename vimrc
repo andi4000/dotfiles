@@ -22,12 +22,8 @@ highlight CursorLineNr ctermbg=Yellow
 
 set scrolloff=10
 
-" solarized
-" needs ~/.vim/colors/solarized.vim
-" set bg=light to switch
 syntax enable
-colorscheme solarized
-set bg=dark
+set bg=light
 
 " To enable mouse scroll in byobu+tmux
 " https://unix.stackexchange.com/a/50735
