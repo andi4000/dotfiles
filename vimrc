@@ -33,3 +33,15 @@ set bg=dark
 " https://unix.stackexchange.com/a/50735
 set ttymouse=xterm2
 set mouse=a
+
+" Automatic bracket closing for vanilla vim
+" https://stackoverflow.com/a/34992101
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ` ``<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap (<CR> (<CR>)<ESC>O
+inoremap [<CR> [<CR>]<ESC>O
+inoremap {<CR> {<CR>}<ESC>O
