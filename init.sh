@@ -18,4 +18,7 @@ if [ -f ~/.byobu/.tmux.conf ]; then
     cat ${DOTFILES_DIR}/byobu/.tmux.conf >> ~/.byobu/.tmux.conf
 fi
 
+echo "==> Mouse button binding"
+ln -sv ${DOTFILES_DIR}/.xbindkeysrc ~/.xbindkeysrc
+
 echo "==> Done!"

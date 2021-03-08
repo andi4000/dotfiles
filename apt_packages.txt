@@ -4,4 +4,6 @@ texlive-fonts-extra
 fonts-cmu
 ack
 vim-gtk                     # for clipboard capability
-
+xbindkeys
+xev
+xdotool

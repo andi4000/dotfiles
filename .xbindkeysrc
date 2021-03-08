@@ -1,0 +1,14 @@
+#
+# Map mouse forward and back button into home and end
+# Usage:
+#   0. `sudo apt install xbindkeys xdotool`
+#   1. `cd ~; ln -s .dotfiles/.xbindkeysrc .`
+#   2. Start xbindkeys
+#
+# Ref: https://www.linuxuprising.com/2019/11/how-to-bind-mouse-buttons-to-keyboard.html
+#
+"xdotool key Home"
+    b:9
+
+"xdotool key End"
+    b:8
