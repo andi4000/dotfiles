@@ -1,17 +1,29 @@
 #
-# Map mouse forward and back button into home and end
+# My custom mouse+keyboard keybindings
+#
 # Usage:
 #   0. `sudo apt install xbindkeys xdotool`
 #   1. `cd ~; ln -s .dotfiles/.xbindkeysrc .`
-#   2. Start xbindkeys
+#   2. `xbindkeys` # will start as daemon
 #
-# Ref: https://www.linuxuprising.com/2019/11/how-to-bind-mouse-buttons-to-keyboard.html
+# Extending:
+#   - Finding source key combination: `xbindkeys --keys` and `xev`
+#   - Finding target key combination:
+#       https://gitlab.com/cunidev/gestures/-/wikis/xdotool-list-of-key-codes
+#   - `pkill xbindkeys && xbindkeys`
+#   - Debug with `xbindkeys -n` to catch unmapped key combination
 #
+# Ref:
+#   - https://www.linuxuprising.com/2019/11/how-to-bind-mouse-buttons-to-keyboard.html
+#   - https://wiki.archlinux.org/index.php/Xbindkeys#Identifying_keycodes
+#
+
+# Target: Home keypress
+# Source: Mouse forward button
+# Reason: After reading webpage slowly, I need to go to the top fast
 "xdotool key Home"
     b:9
 
-"xdotool key End"
-    b:8
 # Target: Next and previous tab (firefox)
 # Source: alt + scroll up/down
 # Reason: Quick firefox navigation
