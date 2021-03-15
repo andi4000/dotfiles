@@ -9,7 +9,7 @@ highlight ExtraWhitespace ctermbg=yellow guibg=yellow
 match ExtraWhitespace /\s\+$/
 
 " mark width 80
-set colorcolumn=80
+set colorcolumn=81
 
 " To format block selection: gq
 autocmd BufNewFile,BufRead *.md,*.txt set textwidth=80
