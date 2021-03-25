@@ -2,6 +2,7 @@ git
 byobu
 zsh
 curl
+htop
 tree
 lm-sensors
 fonts-crosextra-carlito     # replacement for Calibri font
