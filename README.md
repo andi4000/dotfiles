@@ -27,6 +27,7 @@ git clone git@gitlab.com:ariandy/dotfiles .dotfiles
 1. Clone this repo and run `init.sh`
 1. gnome-terminal Tweaks (optional)
 1. Gnome Tweaks (optional)
+1. Thunderbird email, calendar, PGP keys
 
 ### Encrypt Home Partition with eCryptfs
 ```bash
@@ -58,3 +59,21 @@ Open "Tweaks" from dash, setup extensions (system monitor, weather) as needed
 ### gnome-terminal Tweaks
 I really like Solarized. Change "Text and Background Color" and "Palette" into
 solarized
+
+### Thunderbird
+Thunderbird 78 has nice new features:
+- integrated PGP (replaces Enigma plugin)
+- integrated Lightning calendar with CalDAV (replace Lightning, and Google
+  Calendar Plugin)
+
+#### Google Calendar Setup
+Use this URL to subscribe to Google Calendar CalDAV
+
+```
+https://apidata.googleusercontent.com/caldav/v2/CALId/events
+```
+
+replace `CALID` with your calendar ID, in my case it is my Gmail email address.
+Then follow the authentication procedure.
+
+Reference: https://developers.google.com/calendar/caldav/v2/guide
