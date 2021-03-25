@@ -11,5 +11,4 @@ ack
 vim
 vim-gtk                     # for clipboard capability
 xbindkeys
-xev
 xdotool
