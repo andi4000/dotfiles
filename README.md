@@ -47,5 +47,10 @@ sudo ecryptfs-migrate-home -u myuser  # enter tmpuser's password then myuser's p
 
 ### Gnome Tweaks
 ```bash
-# TODO
+sudo apt install gnome-tweak-tool \
+    gnome-shell-extensions \
+    gnome-shell-extension-system-monitor \
+    gnome-shell-extension-weather
 ```
+
+Open "Tweaks" from dash
