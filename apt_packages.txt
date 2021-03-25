@@ -3,6 +3,7 @@ byobu
 zsh
 curl
 tree
+lm-sensors
 fonts-crosextra-carlito     # replacement for Calibri font
 ttf-mscorefonts-installer
 texlive-fonts-extra
