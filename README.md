@@ -53,4 +53,8 @@ sudo apt install gnome-tweak-tool \
     gnome-shell-extension-weather
 ```
 
-Open "Tweaks" from dash
+Open "Tweaks" from dash, setup extensions (system monitor, weather) as needed
+
+### gnome-terminal Tweaks
+I really like Solarized. Change "Text and Background Color" and "Palette" into
+solarized
