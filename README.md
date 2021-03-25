@@ -43,6 +43,8 @@ sudo ecryptfs-migrate-home -u myuser  # enter tmpuser's password then myuser's p
 #  3. delete tmpuser
 ```
 
+[Reference](https://www.howtogeek.com/116032/how-to-encrypt-your-home-folder-after-installing-ubuntu/)
+
 ### Gnome Tweaks
 ```bash
 # TODO
