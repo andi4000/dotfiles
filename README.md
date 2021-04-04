@@ -13,9 +13,10 @@ git clone git@gitlab.com:ariandy/dotfiles .dotfiles
 ```
 
 ## TODO
-- [] create pre-init routine, e.g.: install common apt packages, etc.
-- [] install oh-my-zsh
-- [] clean up structure
+- [ ] figure out how to parse `apt_packages.txt` or pipe into apt
+- [ ] create pre-init routine, e.g.: install common apt packages, etc.
+- [ ] install oh-my-zsh
+- [ ] clean up structure
 
 ## Manual Provisioning
 1. Encrypt home partition
