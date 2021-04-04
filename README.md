@@ -57,6 +57,14 @@ sudo apt install gnome-tweak-tool \
 
 Open "Tweaks" from dash, setup extensions (system monitor, weather) as needed
 
+#### Desktop Background
+Remove background, set color to black
+
+```bash
+gsettings set org.gnome.desktop.background picture-options 'none'
+gsettings set org.gnome.desktop.background primary-color '#000000'
+```
+
 ### gnome-terminal Tweaks
 I really like Solarized. Change "Text and Background Color" and "Palette" into
 solarized
