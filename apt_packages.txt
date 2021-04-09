@@ -15,7 +15,10 @@ vim-gtk                     # for clipboard capability
 xbindkeys
 xdotool
 
+# networking
 nfs-common
+net-tools
+nmap
 
 # multimedia
 inkscape
