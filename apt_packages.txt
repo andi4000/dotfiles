@@ -14,6 +14,7 @@ vim
 vim-gtk                     # for clipboard capability
 xbindkeys
 xdotool
+moreutils                   # for vidir, vipe, etc.
 
 # networking
 nfs-common
