@@ -14,6 +14,9 @@ set colorcolumn=81
 " To format block selection: gq
 autocmd BufNewFile,BufRead *.md,*.txt set textwidth=80
 
+" Set Tab Width to 2 for yaml files
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
+
 " line numbering
 set nu
 set relativenumber
