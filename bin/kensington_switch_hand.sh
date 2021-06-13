@@ -55,8 +55,6 @@ LEFT_HAND_MAPPING="3 1 2 4 5 6 7 8 9"
 CMD="xinput set-button-map"
 DEV_ID=$(xinput list | grep "${DEV_NAME}" | head -n 1 | sed -r "s/.*id=([0-9]+).*/\1/")
 
-CURR_MODE=$(xinput get-button-map ${DEV_ID})
-
 function set_mode_right_hand {
     echo " Setting mapping to right hand mode"
     ${CMD} ${DEV_ID} ${RIGHT_HAND_MAPPING}
@@ -68,6 +66,8 @@ function set_mode_left_hand {
 }
 
 function switch_mapping {
+    CURR_MODE=$(xinput get-button-map ${DEV_ID})
+
     case ${CURR_MODE:0:1} in
         1)
             echo "Detected standard setting"
