@@ -25,13 +25,13 @@
     b:9
 
 # Target: Next and previous tab (firefox)
-# Source: alt + scroll up/down
+# Source: shift + scroll up/down
 # Reason: Quick firefox navigation
 "xdotool key --clearmodifiers Control_L+Page_Up"
-    alt + b:4
+    shift + b:4
 
 "xdotool key --clearmodifiers Control_L+Page_Down"
-    alt + b:5
+    shift + b:5
 
 # Target: Close tab in firefox
 # Source: alt + wheel button press
