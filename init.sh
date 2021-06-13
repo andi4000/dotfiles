@@ -22,4 +22,12 @@ fi
 echo "==> Mouse button binding"
 ln -sv ${DOTFILES_DIR}/.xbindkeysrc ~/.xbindkeysrc
 
+echo "==> Personal scripts"
+if [ -d ~/bin ]; then
+    echo "ERROR: ~/bin directory exist, check manually!"
+else
+    echo "symlinking bin folder"
+    ln -sv ${DOTFILES_DIR}/bin bin
+fi
+
 echo "==> Done!"
