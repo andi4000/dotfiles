@@ -65,6 +65,23 @@ function set_mode_left_hand {
     ${CMD} ${DEV_ID} ${LEFT_HAND_MAPPING}
 }
 
+function get_mapping_human {
+    CURR_MODE=$(xinput get-button-map ${DEV_ID})
+
+    echo -n " Current mode: "
+    case ${CURR_MODE} in
+        ${RIGHT_HAND_MAPPING}*)
+            echo "Right Hand Mode"
+            ;;
+        ${LEFT_HAND_MAPPING}*)
+            echo "Left Hand Mode"
+            ;;
+        *)
+            echo "Unknown mapping: ${CURR_MODE}"
+            ;;
+    esac
+}
+
 function switch_mapping {
     CURR_MODE=$(xinput get-button-map ${DEV_ID})
 
@@ -89,4 +106,5 @@ function switch_mapping {
 }
 
 switch_mapping
+get_mapping_human
 echo " Done"
