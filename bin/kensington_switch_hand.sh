@@ -72,9 +72,11 @@ function get_mapping_human {
     case ${CURR_MODE} in
         ${RIGHT_HAND_MAPPING}*)
             echo "Right Hand Mode"
+            notify-send "Trackball set to Right-hand mode"
             ;;
         ${LEFT_HAND_MAPPING}*)
             echo "Left Hand Mode"
+            notify-send "Trackball set to Left-hand mode"
             ;;
         *)
             echo "Unknown mapping: ${CURR_MODE}"
