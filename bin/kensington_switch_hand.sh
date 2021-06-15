@@ -49,7 +49,7 @@ DEV_NAME="Kensington Expert"
 
 # Button mapping from documentation above
 RIGHT_HAND_MAPPING="2 8 3 4 5 6 7 1 9"
-LEFT_HAND_MAPPING="3 1 2 4 5 6 7 8 9"
+LEFT_HAND_MAPPING="3 1 2 5 4 6 7 8 9"
 
 # The magic
 CMD="xinput set-button-map"
