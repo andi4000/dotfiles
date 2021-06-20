@@ -17,6 +17,9 @@ autocmd BufNewFile,BufRead *.md,*.txt set textwidth=80
 " Set Tab Width to 2 for yaml files
 autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
 
+" For python-black autoformatter, 88 line width
+autocmd Filetype python setlocal colorcolumn=89
+
 " line numbering
 set nu
 set relativenumber
