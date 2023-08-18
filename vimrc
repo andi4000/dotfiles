@@ -1,4 +1,11 @@
 filetype plugin indent on
+
+set number
+syntax enable
+
+" better scrolling
+set scrolloff=10
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -7,9 +14,6 @@ set autoindent
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=yellow guibg=yellow
 match ExtraWhitespace /\s\+$/
-
-" mark width 80
-set colorcolumn=81
 
 " To format block selection: gq
 autocmd BufNewFile,BufRead *.md,*.txt set textwidth=80
@@ -23,30 +27,11 @@ autocmd Filetype python setlocal colorcolumn=89
 " Syntax highlighting for Jenkinsfile
 autocmd BufNewFile,BufRead Jenkinsfile setf groovy
 
-" line numbering
-set nu
-set relativenumber
-highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE
-highlight CursorLineNr ctermbg=Yellow
-
-set scrolloff=10
-
-syntax enable
-set bg=light
-
-" To enable mouse scroll in byobu+tmux
-" https://unix.stackexchange.com/a/50735
-set ttymouse=xterm2
+" enable mouse
 set mouse=a
 
-" Automatic bracket closing for vanilla vim
-" https://stackoverflow.com/a/34992101
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ` ``<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap (<CR> (<CR>)<ESC>O
-inoremap [<CR> [<CR>]<ESC>O
-inoremap {<CR> {<CR>}<ESC>O
+" mouse scroll fix in byobu+tmux
+" https://unix.stackexchange.com/a/50735
+" not for macos iterm2
+"set ttymouse=xterm2
+
